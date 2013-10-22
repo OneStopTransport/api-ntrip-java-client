@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="info_names">
+		<item>Correction Age</item>
+		<item>Elevation (Feet)</item>
+		<item>Elevation (Meters)</item>
+		<item>Speed (MPH)</item>
+		<item>Speed (Km/h)</item>
+		<item>Heading</item>
+		<item>H-DOP</item>
+		<item>V-DOP</item>
+		<item>P-DOP</item>
+		<item>Nothing</item>
+	</string-array>
+	<string-array name="info_codes">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>9</item>
+		<item>0</item>
+	</string-array>
+		<string-array name="protocol_names">
+		<item>None</item>
+		<item>NTRIP v1.0</item>
+		<item>Raw TCP/IP</item>
+	</string-array>
+	<string-array name="protocol_codes">
+		<item>none</item>
+		<item>ntripv1</item>
+		<item>rawtcpip</item>
+	</string-array>
+	<string-array name="autoconfig_names">
+		<item>No Auto-Config</item>
+		<item>NovAtel OEMV</item>
+		<item>NovAtel OEMV RTCMv3</item>
+		<item>NovAtel OEMV RTCM</item>
+		<item>NovAtel OEMV CMR+</item>
+		<item>NovAtel OEMV w/Cellular</item>
+	</string-array>
+	<string-array name="autoconfig_codes">
+		<item>none</item>
+		<item>novateloemv</item>
+		<item>novateloemvrtcmv3</item>
+		<item>novateloemvrtcm</item>
+		<item>novateloemvcmr</item>
+		<item>novateloemvcellular</item>
+	</string-array>
+	<string-array name="ntriplocation_names">
+		<item>Automatic</item>
+		<item>Manual</item>
+	</string-array>
+	<string-array name="ntriplocation_codes">
+		<item>auto</item>
+		<item>manual</item>
+	</string-array>
+	<string-array name="savedata_names">
+		<item>None</item>
+		<item>NMEA GGA, RMC</item>
+		<item>Everything</item>
+	</string-array>
+	<string-array name="savedata_codes">
+		<item>none</item>
+		<item>nmeaggarmc</item>
+		<item>allbinary</item>
+	</string-array>
+</resources>

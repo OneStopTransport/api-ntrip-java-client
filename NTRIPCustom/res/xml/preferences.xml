@@ -1,0 +1,119 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen
+			android:key="displaysettings"
+			android:title="Display Settings">
+			<ListPreference
+				android:key="info1"
+				android:title="Info Box 1"
+				android:entries="@array/info_names"
+				android:entryValues="@array/info_codes"
+				android:dialogTitle="Data in Info Box 1"
+				android:defaultValue="1"
+			/>
+			<ListPreference
+				android:key="info2"
+				android:title="Info Box 2"
+				android:entries="@array/info_names"
+				android:entryValues="@array/info_codes"
+				android:dialogTitle="Data in Info Box 2"
+				android:defaultValue="4"
+			/>
+			<CheckBoxPreference
+				android:key="keepscreenon"
+				android:title="Keep Screen On"
+			/>
+		</PreferenceScreen>
+		<PreferenceScreen
+			android:key="receiversettings"
+			android:title="Receiver Settings">
+						
+			<com.lefebure.ntripclient.BluetoothDevicePreference
+    			android:key="bluetooth_mac"
+			    android:title="Bluetooth Device"
+    			android:dialogTitle="Choose Bluetooth Device"
+    		/>
+			<CheckBoxPreference
+				android:key="autoswitchbluetooth"
+				android:title="Switch Bluetooth"
+				android:summary="Automatically switch bluetooth on/off"
+			/>
+			<ListPreference
+				android:key="savedatatype"
+				android:title="Save Data Stream to File"
+				android:entries="@array/savedata_names"
+				android:entryValues="@array/savedata_codes"
+				android:defaultValue="none"
+			/>
+			<ListPreference
+				android:key="receiverautoconfig"
+				android:title="Auto-Configure Receiver"
+				android:entries="@array/autoconfig_names"
+				android:entryValues="@array/autoconfig_codes"
+				android:defaultValue="none"
+			/>
+			<CheckBoxPreference
+				android:key="htcconnectworkaround"
+				android:title="HTC workaround"
+				android:summary="HTC devices need to use a different Bluetooth connection method."
+			/>
+		</PreferenceScreen>
+		<PreferenceScreen
+			android:key="ntripsettings"
+			android:title="NTRIP Settings">
+			<ListPreference
+				android:key="networkprotocol"
+				android:title="Network Protocol"
+				android:entries="@array/protocol_names"
+				android:entryValues="@array/protocol_codes"
+				android:defaultValue="none"
+			/>
+			<EditTextPreference android:key="ntripcasterip"
+				android:title="Caster IP"
+				android:dialogTitle="NTRIP Caster IP (x.x.x.x)"
+				android:defaultValue="165.206.203.10"
+			/>
+			<EditTextPreference android:key="ntripcasterport"
+				android:title="Caster Port"
+				android:dialogTitle="Caster Port (1-65535)"
+				android:defaultValue="10000"
+			/>
+			<EditTextPreference android:key="ntripusername"
+				android:title="Username"
+				android:dialogTitle="Your Username"
+			/>
+			<EditTextPreference android:key="ntrippassword"
+				android:title="Password"
+				android:dialogTitle="Your Password"
+			/>
+			<ListPreference
+				android:key="ntripstream"
+				android:title="Data Stream"
+				android:persistent="true"
+			/>
+			<EditTextPreference android:key="ntripsourcetable"
+				android:title="SourceTable"
+				android:dialogTitle="Direct From The Server"
+			/>
+			<ListPreference
+				android:key="ntriplocation"
+				android:title="Reported Location"
+				android:entries="@array/ntriplocation_names"
+				android:entryValues="@array/ntriplocation_codes"
+				android:defaultValue="auto"
+			/>
+			<EditTextPreference android:key="ntriplatitude"
+				android:title="Reported Latitude"
+				android:dialogTitle="-90 to 90"
+			/>
+			<EditTextPreference android:key="ntriplongitude"
+				android:title="Reported Longitude"
+				android:dialogTitle="-180 to 180"
+			/>
+			<CheckBoxPreference
+				android:key="ntriptestmode"
+				android:title="Network Testing Mode"
+				android:summary="Do not connect to receiver."
+			/>
+		</PreferenceScreen>
+	</PreferenceScreen>
