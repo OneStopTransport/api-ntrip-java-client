@@ -1,13 +1,13 @@
 api-ntrip-java-client
 =====================
 
-Neste repositório encontra-se um projecto Android, este projecto é um serviço para acesso a servidores que utilizam o protocolo NTRIP, este projecto teve como base código open source que pode ser encontrado em  lefebure.com. 
+Este projecto consiste numa aplicação Android que contém um serviço para acesso a servidores que utilizam o protocolo NTRIP. Este trabalho teve como base código *open source* que pode ser encontrado em lefebure.com.
 
-Existem três entidades diferentes.
+Existem três entidades diferentes:
 
-- Um serviço NTRIP que permite a gestão de uma interface Bluetooth e de uma ligação TCP/IP, com o servidor de NTRIP. Os conteúdos RTCM provenientes da estação de referencia são enviados para uma porta série do GPS diferencial que por sua vez está ligado a uma interface Bluetooth. O código encontra-se na biblioteca NTRIPLib (`NTRIPService.java`) .
-- Uma classe que permite a interface com o serviço acima descrito de um a forma bastante fácil, encontra-se na biblioteca NTRIPLib (`NTrip.java`).
-- Uma terceira entidade é uma aplicação exemplo que permite o programador avaliar a forma de utilizar o a serviço NTRIP, encontra-se em NTRIPCustom.
+- Um serviço NTRIP que permite a gestão de uma interface Bluetooth e de uma ligação TCP/IP, com o servidor de NTRIP. Os conteúdos RTCM provenientes da estação de referencia são enviados para uma porta série do GPS diferencial que por sua vez está ligado a uma interface Bluetooth. O código encontra-se na biblioteca NTRIPLib (`NTRIPService.java`) ;
+- Uma classe que permite a interface com o serviço acima descrito de um a forma bastante fácil, encontra-se na biblioteca NTRIPLib (`NTrip.java`);
+- Uma terceira entidade é uma aplicação exemplo que permite o programador avaliar a forma de utilizar o a serviço NTRIP, encontra-se em `NTRIPCustom`;
 
 ## Processo de linkagem da biblioteca ##
 
@@ -23,8 +23,8 @@ Verificar se o projecto é biblioteca:
 
 > 1. Selecionar o projecto no Package Explorer;
 > 2. Menu Project Properties
-> 3. Selecionar Android
-> 4. Verificar que o "Is Library" está selecionado
+> 3. Seleccionar Android
+> 4. Verificar que o "Is Library" está seleccionado
 
 Criar um novo projecto de android (`Menu New > Android project`) com uma actividade.
 Utilizar a biblioteca previamente importada:
@@ -33,10 +33,10 @@ Utilizar a biblioteca previamente importada:
 > 2. Menu Project Properties
 > 3. Selecionar Android
 > 4. Add
-> 5. Selecionar a biblioteca e carregar ok
-> 6. Carregar ok novamente
+> 5. Seleccionar a biblioteca e carregar `ok`
+> 6. Carregar `ok`
 
-##Instrucções de utilização da biblioteca##
+##Instruções de utilização da biblioteca##
 
 Na actividade, criar uma instância da classe de biblioteca:
 
@@ -75,17 +75,17 @@ Fechar o sistema NTrip:
 `ntrip.Disconnect();`
 
 
-##Instrucções de utilização do exemplo##
+##Instruções de utilização do exemplo##
 
 As instruções apresentadas aplicam-se ao Eclipse 3.7 com ADT plugin versão 18.0.0 ou superior.
 
 No Eclipse, importar o projecto da biblioteca:
 > 1. Menu File Import;
 > 2. Existing projects into workspace;
-> 3. Selecionar o projecto com a biblioteca (NTRIPLib);
+> 3. Seleccionar o projecto com a biblioteca (NTRIPLib);
 
 No Eclipse, importar o projecto de exemplo:
 
 > 1. Menu File Import;
 > 2. Existing projects into workspace;
-> 3. Selecionar o projecto com o exemplo (NTRIPCustom);
+> 3. Seleccionar o projecto com o exemplo (NTRIPCustom);
